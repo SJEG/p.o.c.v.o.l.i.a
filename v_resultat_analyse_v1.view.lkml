@@ -7,6 +7,7 @@ view: v_resultat_analyse_v1 {
   }
 
   dimension: cle_ran {
+    primary_key: yes
     type: number
     sql: ${TABLE}.CLE_RAN ;;
   }
