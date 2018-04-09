@@ -12,6 +12,12 @@ view: v_point_prelevement_v1 {
     sql: ${TABLE}.CODE_CONTRAT ;;
   }
 
+
+
+  parameter: contrat_param {
+    type: string
+  }
+
   dimension: code_entite_reseau {
     type: string
     sql: ${TABLE}.CODE_ENTITE_RESEAU ;;
@@ -69,6 +75,7 @@ view: v_point_prelevement_v1 {
 
   measure: count {
     type: count
+    ##sql: ${TABLE}.CODE_CONTRAT={% parameter contrat_param %} ;;
     drill_fields: []
   }
 }
