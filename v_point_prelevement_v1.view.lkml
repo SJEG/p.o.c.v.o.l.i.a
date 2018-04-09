@@ -3,6 +3,7 @@ view: v_point_prelevement_v1 {
 
   dimension: cle_pplv {
     type: number
+    primary_key: yes
     sql: ${TABLE}.CLE_PPLV ;;
   }
 
