@@ -4,7 +4,7 @@ view: v_point_prelevement_v1 {
 
 
   parameter: contrat_param {
-    type: unquoted
+    type: string
   }
 
   dimension: cle_pplv {
