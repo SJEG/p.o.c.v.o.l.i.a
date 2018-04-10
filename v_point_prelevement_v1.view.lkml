@@ -1,6 +1,12 @@
 view: v_point_prelevement_v1 {
   sql_table_name: lookersandbox.V_POINT_PRELEVEMENT_V1 ;;
 
+
+
+  parameter: contrat_param {
+    type: unquoted
+  }
+
   dimension: cle_pplv {
     type: number
     primary_key: yes
@@ -13,10 +19,6 @@ view: v_point_prelevement_v1 {
   }
 
 
-
-  parameter: contrat_param {
-    type: string
-  }
 
   dimension: code_entite_reseau {
     type: string
@@ -75,7 +77,6 @@ view: v_point_prelevement_v1 {
 
   measure: count {
     type: count
-    ##sql: ${TABLE}.CODE_CONTRAT={% parameter contrat_param %} ;;
     drill_fields: []
   }
 }

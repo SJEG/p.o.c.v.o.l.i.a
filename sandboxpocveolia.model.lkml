@@ -25,7 +25,6 @@ explore: v_prelevement_v1 {
 explore: v_resultat_analyse_v1 {
     join: v_prelevement_v1 {
     sql_on: ${v_resultat_analyse_v1.cle_plv} = ${v_prelevement_v1.cle_plv} ;;
-   # fields: [ v_resultat_analyse_v1.code_parametre,v_resultat_analyse_v1.libelle_parametre,v_resultat_analyse_v1.conforme_parametre ]
       relationship: many_to_one
   }
 
